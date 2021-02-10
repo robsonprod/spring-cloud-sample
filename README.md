@@ -2,13 +2,12 @@
 
 Clone the repo:
 ``` bash
-git clone git@github.com:mailchimp/middleman-with-md-submodule-example.git
-cd middleman-with-md-submodule-example
+git clone git@github.com:robsonprod/spring-cloud-sample.git
+cd spring-cloud-sample
 ```
 
 Install dependencies:
-``` bash
-bundle install
+``` 
 ```
 
 Initialize the submodule:
