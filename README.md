@@ -1,7 +1,7 @@
 # spring-cloud-sample
 1. Desafio Parent (nome-modulo-parent 1.0.0)
 - Cloud Config Server (nome-module 0.0.1)
-- Java 11
+- Java 8
 
 Clone the repo:
 ``` bash
@@ -51,19 +51,41 @@ ng serve
 ```
 
 
-
 Run it in order:
 ``` bash
-1. config
-2. eureka server (discovery)
-3. users
-4. zuul (proxy) - call endpoints
+1. desafio-configuration
+2. desafio-eureka-server (discovery)
+3. desafio-users
+4. desafio-zuul (proxy) - call endpoints
+5. spring-cloud-app
 ```
 
 Config Enviroment variables:
-``` bash
-1. config
-GIT_HOSTNAME=https://github.com/robsonprod/spring-cloud-sample-config.git;GIT_USERNAME=#;GIT_PASSWORD=#
+<p>in application.yml</p>
+
+```bash
+git:
+  uri: ${GIT_HOSTNAME}
+  username: ${GIT_USERNAME}
+  password: ${GIT_PASSWORD}
+  search-paths: developer*
 ```
 
+<p>example</p>
 
+``` bash
+1. config
+GIT_HOSTNAME=https://github.com/robsonprod/spring-cloud-sample-config.git;GIT_USERNAME=robsonprod@gmail.com;GIT_PASSWORD=#
+```
+
+Config RabbitMQ
+<p>In users.yml update </p>
+
+``` bash
+rabbitmq:
+    host: localhost
+    username: test
+    password: "test"
+    port: 5672
+```
+<p>Create Exchanges desafio-exchange same as RabbitConfig topicExchangeName and add a queue </p>
