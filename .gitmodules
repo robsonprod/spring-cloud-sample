@@ -1,0 +1,6 @@
+[submodule "spring-cloud-sample-config"]
+	path = spring-cloud-sample-config
+	url = git@github.com:robsonprod/spring-cloud-sample-config.git
+[submodule "spring-cloud-app"]
+	path = spring-cloud-app
+	url = git@github.com:robsonprod/spring-cloud-app.git

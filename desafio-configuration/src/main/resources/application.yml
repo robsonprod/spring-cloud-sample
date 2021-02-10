@@ -1,0 +1,19 @@
+logging:
+  level:
+    com.netflix.discovery: 'OFF'
+    org.springframework.cloud: 'DEBUG'
+
+server:
+  port: 9090
+
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: ${GIT_HOSTNAME}
+          username: ${GIT_USERNAME}
+          password: ${GIT_PASSWORD}
+          search-paths: developer*
+      profile: developer
+      label: master
