@@ -1,4 +1,7 @@
 # spring-cloud-sample
+1. Desafio Parent (nome-modulo-parent 1.0.0)
+- Cloud Config Server (nome-module 0.0.1)
+- Java 11
 
 Clone the repo:
 ``` bash
@@ -29,6 +32,11 @@ db.username=postgres
 db.password=123
 ```
 
+With docker:
+spring-cloud-sample\docker
+docker-compose.yml file, then run docker-compose up.
+
+
 spring-cloud-app how to install:
 Open a terminal window and go to the project root folder.
 You need to have npm installed globally.
@@ -44,9 +52,18 @@ ng serve
 
 
 
-Run it:
+Run it in order:
 ``` bash
+1. config
+2. eureka server (discovery)
+3. users
+4. zuul (proxy) - call endpoints
+```
 
+Config Enviroment variables:
+``` bash
+1. config
+GIT_HOSTNAME=https://github.com/robsonprod/spring-cloud-sample-config.git;GIT_USERNAME=#;GIT_PASSWORD=#
 ```
 
 
