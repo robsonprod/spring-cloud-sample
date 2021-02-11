@@ -1,7 +1,19 @@
 # spring-cloud-sample
-1. Desafio Parent (nome-modulo-parent 1.0.0)
-- Cloud Config Server (nome-module 0.0.1)
-- Java 8
+ Desafio Parent (nome-modulo-parent 1.0.0)
+
+Technology :
+- [Spring Cloud Config Server](https://spring.io/projects/spring-cloud-netflix)
+- [Java Platform (JDK) 8](https://www.java.com/pt-BR/download/help/java8_pt-br.html)
+- [Maven](https://maven.apache.org/)
+- [PostgreSQL](https://www.postgresql.org/)
+- [Spring Boot](https://spring.io/projects/spring-boot)
+- [Spring Security](https://spring.io/projects/spring-security)
+- [Hibernate](https://hibernate.org/)
+- [IntelliJ IDEA](https://www.jetbrains.com/pt-br/idea/)
+- [ Redis ](https://redis.io/)
+- [RabbitMQ](https://www.rabbitmq.com/)
+- [Zuul service](https://github.com/Netflix/zuul/wiki)  
+- [Eureka service]() 
 
 Clone the repo:
 ``` bash
@@ -10,7 +22,8 @@ cd spring-cloud-sample
 ```
 
 Install dependencies:
-``` 
+``` bash
+../mvnw spring-boot:run
 ```
 
 Initialize the submodule:

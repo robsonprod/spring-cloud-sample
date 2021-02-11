@@ -19,7 +19,7 @@ public class UserCredentialsDTO implements Serializable {
 
     @NotNull
     @NotEmpty
-    private String username;
+    private String login;
 
     @NotNull
     @NotEmpty

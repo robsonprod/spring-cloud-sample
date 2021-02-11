@@ -33,7 +33,7 @@ public class AuthenticateController {
     @ResponseBody
     public ResponseEntity<?> login(@Valid @RequestBody UserCredentialsDTO user) {
 
-        val token = new UsernamePasswordAuthenticationToken(user.getUsername(), user.getPassword());
+        val token = new UsernamePasswordAuthenticationToken(user.getLogin(), user.getPassword());
         val auth= authenticationManager.authenticate(token);
 
         SecurityContext context = SecurityContextHolder.getContext();
