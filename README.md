@@ -45,7 +45,7 @@ db.username=postgres
 db.password=123
 ```
 
-With docker:
+Docker Up (Redis and RabbitMQ):
 spring-cloud-sample\docker
 docker-compose.yml file, then run docker-compose up.
 
